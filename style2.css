@@ -1,1 +1,50 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    backgrounnd: #f2f2f2;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+.contenedor{
+    width: 400px;
+    margin: 40px;
+}
+.formulario, .contenedor-inputs{
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+}
+.formulario input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+.formulario input:focus{
+    border-bottom: 2px solid #246eb9;
+}
+.formulario input radio{
+    display: none;
+}
+.formulario .sexo .hombre, .formulario .sexo .mujer {
+    border-radius: 3px 0 0 3px;
+}
+.formulario .label-radio{
+    background: rgba(249,169,63,.4);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 49.5%;
+}
+.formulario .input radio:checked + .label-radio{
+    background: #f9a03f;
+}
